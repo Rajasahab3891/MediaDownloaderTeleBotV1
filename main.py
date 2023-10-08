@@ -1,3 +1,5 @@
+import os
+os.system("pip install telebot tele-mod user_agent bs4 pytube flask requests html.parser")
 from telebot.async_telebot import AsyncTeleBot
 # @BENN_DEV & @BENfiles
 from telebot.types import Message, CallbackQuery,InlineKeyboardMarkup as Keyboard, InlineKeyboardButton as Button, InputFile as File, Update
@@ -7,7 +9,7 @@ from user_agent import generate_user_agent
 from bs4 import BeautifulSoup
 from pytube import YouTube
 from flask import Flask, request
-import os, requests, asyncio, re, urllib.request, pytube
+import requests, asyncio, re, urllib.request, pytube
 
 
 bot_token = "6553005927:AAHanAua4_5uqV096BFWDf4Z6HHTcG7qCyo"
