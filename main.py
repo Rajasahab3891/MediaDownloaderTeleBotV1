@@ -1,5 +1,5 @@
 import os
-os.system("pip install telebot tele-mod user_agent bs4 pytube flask requests html.parser")
+os.system("pip install telebot tele-mod user_agent bs4 pytube flask requests aiohttp html.parser")
 from telebot.async_telebot import AsyncTeleBot
 # @BENN_DEV & @BENfiles
 from telebot.types import Message, CallbackQuery,InlineKeyboardMarkup as Keyboard, InlineKeyboardButton as Button, InputFile as File, Update
