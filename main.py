@@ -11,7 +11,7 @@ from pytube import YouTube
 from waker import server
 import requests, asyncio, re, urllib.request, pytube
 
-bot_token = "6553005927:AAHanAua4_5uqV096BFWDf4Z6HHTcG7qCyo"
+bot_token = "BOT TOKEN"
 
 app = AsyncTeleBot(token=bot_token, parse_mode="Markdown")
 
