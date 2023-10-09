@@ -678,7 +678,7 @@ async def sound(callback: CallbackQuery):
   bot = await app.get_me()
   bot_name = bot.first_name
   bot_url = f"{bot.username}.t.me"
-  coption = f"● title : {response['title']}\n● Likes : {response['likes']}\n\n● Uploaded By : [{bot_name}]({bot_url})"
+  caption = f"● title : {response['title']}\n● Likes : {response['likes']}\n\n● Uploaded By : [{bot_name}]({bot_url})"
   await app.send_audio(
       chat_id=user_id,
       audio=response["mp3"],
