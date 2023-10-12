@@ -62,14 +62,17 @@ async def start(message: Message):
           await app.send_message(int(adminn), caption)
         except:
           continue
-  subscribe = await subscription(user_id)
-  if subscribe:
-    await app.reply_to(
+  try:
+    subscribe = await subscription(user_id)
+    if subscribe:
+      await app.reply_to(
         message,
         text=
         f"عذرا عزيزي\nعليك الإشتراك بقناة البوت أولا لتتمكن من استخدامه\n{subscribe['channel']}\nاشترك ثم ارسل : /start"
-    )
-    return  # @BENN_DEV & @BENfiles
+      )
+      return  # @BENN_DEV & @BENfiles
+  except:
+    ...
   await app.reply_to(
       message,
       text=
